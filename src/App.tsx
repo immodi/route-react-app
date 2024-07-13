@@ -3,7 +3,6 @@ import { useEffect, useState } from "react"
 import {Customer, Transaction, customerColumns, getData} from "./helpers/getData" 
 import { DataTable } from './components/Table';
 import { ColumnDef } from '@tanstack/react-table';
-import { Chart } from './components/Chart';
 
 
 

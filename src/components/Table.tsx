@@ -24,7 +24,6 @@ import {
   TableRow,
 } from "./ui/table"
 import { useState } from "react";
-import { DropdownMenu } from "./ui/dropdown-menu";
 import { DropdownMenuRadio } from "./DropMenu";
 import { Chart } from "./Chart";
  
@@ -62,14 +61,6 @@ export function DataTable<TData, TValue>({
         pagination,
     },
     })
-    const chartData = [
-        { month: "January", desktop: 186 },
-        { month: "February", desktop: 305 },
-        { month: "March", desktop: 237 },
-        { month: "April", desktop: 73 },
-        { month: "May", desktop: 209 },
-        { month: "June", desktop: 214 },
-      ]
 
     const [costumer, setCostumer] = useState<Customer>()
     const [position, setPosition] = useState("name")
