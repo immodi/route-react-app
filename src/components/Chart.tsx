@@ -26,7 +26,7 @@ const chartConfig = {
 } satisfies ChartConfig
 
 interface State {
-    name: string,
+    name: string | undefined,
     customerId: number | undefined
 }
 

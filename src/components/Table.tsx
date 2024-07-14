@@ -80,9 +80,9 @@ export function DataTable<TData, TValue>({
                         onChange={(event) =>                        
                             table.getColumn(position)?.setFilterValue((event.target.value))
                         }
-                        className="max-w-sm  relative left-5"
+                        className="max-w-sm relative left-5"
                         />
-                        <div className="relative right-5">
+                        <div className="relative scale-90 right-5">
                             <DropdownMenuRadio table={table} position={position} setPosition={setPosition}/>
                             <Button className="m-3" onClick={() => {table.getColumn(position)?.setFilterValue("")}}>Clear Filter</Button>
                         </div>
@@ -91,7 +91,7 @@ export function DataTable<TData, TValue>({
                 <h2 className="text-2xl flex content-between items-center justify-between font-bold px-6 py-4 bg-gray-100 border-b border-gray-200">
                     {
                         (dataType === 'customers') ? (
-                            "Costumers List"
+                            "Customers List"
                         ) : (
                             costumer ? `${costumer.name}'s Transactions List` : "Loading...."
                         )
@@ -184,7 +184,7 @@ export function DataTable<TData, TValue>({
                 && 
                 <div className="max-w-5xl">
                     
-                    <Chart name="Ahmed" customerId={costumer?.id} />
+                    <Chart name={costumer?.name} customerId={costumer?.id} />
                 </div>
             }
         </div>
