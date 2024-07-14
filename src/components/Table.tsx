@@ -82,7 +82,7 @@ export function DataTable<TData, TValue>({
                         }
                         className="max-w-sm relative left-5"
                         />
-                        <div className="relative scale-90 right-5">
+                        <div className="relative scale-90 flex items-center sm:flex-row flex-col left-3">
                             <DropdownMenuRadio table={table} position={position} setPosition={setPosition}/>
                             <Button className="m-3" onClick={() => {table.getColumn(position)?.setFilterValue("")}}>Clear Filter</Button>
                         </div>
